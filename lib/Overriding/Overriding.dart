@@ -1,8 +1,8 @@
 void main() {
   var gogo = Circle(15.1);
   var gogo2 = Circle2(15, 100);
-  gogo.getArea();
-  gogo2.getArea();
+  gogo.getArea(); //calculation Area...ققققققققققق
+  gogo2.getArea(); //lenth culculation
 }
 
 class Shape {
