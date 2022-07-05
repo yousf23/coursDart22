@@ -1,5 +1,7 @@
 class Animal {
-  Animal(this.name, this.age);
+  Animal(this.name, this.age) {
+    print('animal constractor');
+  }
 
   int age;
   String name;
