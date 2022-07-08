@@ -1,10 +1,10 @@
 import 'dart:math';
 
 void main() {
-  Circle circle1 = Circle(5);
-  Rectangle rectangle1 = Rectangle(15, 30);
-  shapeArea(circle1);
-  shapeArea(rectangle1);
+  Shape circle1 = Circle(5);
+  Shape rectangle1 = Rectangle(15, 30);
+  shapeArea(circle1); //78.53981633974483
+  shapeArea(rectangle1); //450.0
 }
 
 void shapeArea(Shape object) {
