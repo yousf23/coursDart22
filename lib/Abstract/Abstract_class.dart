@@ -4,7 +4,7 @@ void main() {
   Shape.printName(); //the name is youssef and this method is static
 }
 
-abstract class Shape {
+abstract class Shape extends {
   final String color;
   Shape(this.color) {
     print('superClass Constructor');

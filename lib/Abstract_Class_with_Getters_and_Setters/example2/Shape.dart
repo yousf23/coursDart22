@@ -1,10 +1,11 @@
 abstract class Shape {
-  late String _color;
   set color(String value);
   String get color;
 }
 
-class Circle extends Shape {
+class Circle implements Shape {
+  late String _color;
+
   @override
   set color(String value) {
     _color = value.toUpperCase();
