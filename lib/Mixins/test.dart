@@ -4,6 +4,8 @@ void main() {
   print(yoo.color);
 
   yoo.rotation();
+
+  yoo.miz();
 }
 
 abstract class Shape {
@@ -11,7 +13,7 @@ abstract class Shape {
   Shape({this.color = 'green'});
 }
 
-mixin ShapeRotation {
+class ShapeRotation {
   String direction = 'clockwise';
   double speed = 6.0;
   void rotation() {
@@ -19,8 +21,14 @@ mixin ShapeRotation {
   }
 }
 
-class Circle extends Shape with ShapeRotation {
+class Circle extends Shape with ShapeRotation, test {
   double raduis;
 
   Circle(this.raduis);
+}
+
+class test {
+  void miz() {
+    print('miwwww');
+  }
 }
