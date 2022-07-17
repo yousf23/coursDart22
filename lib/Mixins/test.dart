@@ -13,7 +13,7 @@ abstract class Shape {
   Shape({this.color = 'green'});
 }
 
-mixin ShapeRotation {
+class ShapeRotation {
   String direction = 'clockwise';
   double speed = 6.0;
   void rotation() {
