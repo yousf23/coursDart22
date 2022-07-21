@@ -4,8 +4,10 @@ void main() {
   try {
     testNumber(y);
   } on Myexception catch (e) {
-    print(e.message);
+    print(e.message); //Can not divide by zero
   }
+
+  print('End of the program'); //End of the program
 }
 
 class Myexception implements Exception {
