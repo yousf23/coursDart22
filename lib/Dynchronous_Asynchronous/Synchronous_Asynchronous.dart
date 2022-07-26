@@ -7,8 +7,9 @@ void main() {
 }
 
 void processFile() {
+  String ee = 'youssef\n';
   File file = File('data.txt');
-  file.writeAsStringSync('hello\n', mode: FileMode.append);
+  file.writeAsStringSync(ee, mode: FileMode.writeOnlyAppend);
   RandomAccessFile randomAccessFile = file.openSync();
   processRandomAccessFile(randomAccessFile);
 }
